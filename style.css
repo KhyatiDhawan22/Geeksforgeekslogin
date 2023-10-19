@@ -50,21 +50,41 @@ body{
     align-items:start;
 
     
+
+    
+}
+
+
+.form-middle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+
+    width: 350px;
+    margin: auto;
+
+    font-size: 12px;
+    color: gray;
+    font-weight: 600;
+
 }
 
 .left{
-    padding: 13px 83.5px;
+    padding: 14px 83.5px;
 
     border-top: 2px solid green;
     color: gray;
     font-weight: 600;
+    border-bottom: 1px solid gray;
 }
 
 .right{
-    padding: 13px 83.5px;
+    padding: 15px 83.5px;
     background-color: rgb(192, 192, 192);
     color: gray;
     font-weight: 600;
+    border-bottom: 1px solid gray;
 
 }
 
@@ -73,9 +93,10 @@ body{
 .form{
     width: 400px;
     height: 200px;
-    
+    background-color: white;
 
     margin: 20px;
+    margin-top: 30px;
 
     display: flex;
     flex-direction: column;
@@ -83,6 +104,17 @@ body{
     align-items: center;
 }
 
+
+.in{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:self-start;
+}
+
+i{
+    margin: 10px;
+}
 input{
     padding: 15px;
     width: 400px;
@@ -91,14 +123,16 @@ input{
 
     box-sizing: border-box;
 
+    margin-bottom: 20px;
+
 }
 
 input::placeholder{
     font-family: 'Poppins', sans-serif;
 }
 
-button{
-    padding: 15px;
+.form button{
+    padding: 13px;
     width: 400px;
     border: 1px solid gray;
     border-radius: 5px;
@@ -109,4 +143,23 @@ button{
 
     cursor: pointer;
 
+}
+
+
+
+
+.logos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logos img{
+    margin-right: 40px;
+    width: 180px;
+    height: 50px;
+
+    cursor: pointer;
 }
